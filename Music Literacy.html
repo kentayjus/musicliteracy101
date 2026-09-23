@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Foundations of Music Literacy</title>
+    <!-- Font Awesome CDN for Official Brand Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -127,6 +129,7 @@
         .sidebar-social a {
             display: flex;
             align-items: center;
+            gap: 10px;
             color: #ecf0f1;
             text-decoration: none;
             font-size: 0.85rem;
@@ -136,6 +139,12 @@
 
         .sidebar-social a:hover {
             color: var(--accent-color);
+        }
+
+        .social-icon {
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
         }
 
         /* Main Content */
@@ -224,7 +233,7 @@
         <!-- Top Left Info Block -->
         <div class="sidebar-header">
             <img src="assets/Kentayjus Mercaba Icon.jpg" alt="Kentayjus Logo" class="sidebar-logo">
-            <div class="sidebar-quote">"Fostering a Kentayjus flow of creative energy and shared artistic vision."</div>
+            <div class="sidebar-quote">"Fostering a continuous flow of creative energy and shared artistic vision."</div>
             <div class="sidebar-contact">
                 For questions or business inquiries:
                 <a href="mailto:kentayjus@gmail.com">kentayjus@gmail.com</a>
@@ -242,11 +251,18 @@
             <li><a href="#module-7">Module 7: Reading Music</a></li>
         </ul>
 
-        <!-- Bottom Left External Music Links -->
+        <!-- Bottom Left External Links -->
         <div class="sidebar-social">
             <div class="sidebar-social-title">Listen & Follow</div>
-            <a href="https://soundcloud.com/kentayjus" target="_blank" rel="noopener noreferrer">🎧 SoundCloud</a>
-            <a href="https://suno.com/@kentayjus" target="_blank" rel="noopener noreferrer">🎵 Suno AI Music</a>
+            <a href="https://soundcloud.com/kentayjus" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-soundcloud social-icon" style="color: #ff5500;"></i> SoundCloud
+            </a>
+            <a href="https://suno.com/@kentayjus" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-wand-magic-sparkles social-icon" style="color: #a855f7;"></i> Suno AI Music
+            </a>
+            <a href="https://www.instagram.com/kentayjus/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram social-icon" style="color: #e1306c;"></i> Instagram
+            </a>
         </div>
     </nav>
 
