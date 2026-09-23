@@ -25,34 +25,79 @@
 
         /* Sidebar Navigation */
         nav {
-            width: 250px;
+            width: 260px;
             background: var(--primary-color);
             color: white;
             height: 100vh;
             position: fixed;
             overflow-y: auto;
             padding-top: 20px;
+            box-sizing: border-box;
         }
 
-        nav h2 {
+        /* Sidebar Header Styling */
+        .sidebar-header {
+            padding: 0 15px 20px 15px;
             text-align: center;
-            font-size: 1.2rem;
-            padding: 0 15px;
-            margin-bottom: 20px;
+            border-bottom: 1px solid var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .sidebar-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-color);
+            margin-bottom: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .sidebar-quote {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #bdc3c7;
+            margin: 10px 0 15px 0;
+            line-height: 1.4;
+        }
+
+        .sidebar-contact {
+            font-size: 0.8rem;
+            color: #ecf0f1;
+        }
+
+        .sidebar-contact a {
+            display: inline-block;
+            margin-top: 6px;
+            color: #ffffff;
+            background-color: var(--accent-color);
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+            word-break: break-all;
+        }
+
+        .sidebar-contact a:hover {
+            background-color: #2980b9;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li a {
             display: block;
-            padding: 10px 20px;
+            padding: 12px 20px;
             color: #ecf0f1;
             text-decoration: none;
             border-bottom: 1px solid var(--secondary-color);
             transition: background 0.3s;
+            font-size: 0.95rem;
         }
 
         nav ul li a:hover {
@@ -62,7 +107,7 @@
 
         /* Main Content */
         main {
-            margin-left: 250px;
+            margin-left: 260px;
             padding: 40px;
             max-width: 900px;
             background: white;
@@ -143,7 +188,17 @@
 
     <!-- Sidebar Navigation -->
     <nav>
-        <h2>Music Literacy Course</h2>
+        <!-- Top Left Info Block -->
+        <div class="sidebar-header">
+            <img src="assets/Kentayjus Mercaba Icon.jpg" alt="Kentayjus Logo" class="sidebar-logo">
+            <div class="sidebar-quote">"Fostering a continuous flow of creative energy and shared artistic vision."</div>
+            <div class="sidebar-contact">
+                For questions or business inquiries:
+                <a href="mailto:kentayjus@gmail.com">kentayjus@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Course Navigation Links -->
         <ul>
             <li><a href="#module-1">Module 1: Building Blocks</a></li>
             <li><a href="#module-2">Module 2: Physics of Sound</a></li>
