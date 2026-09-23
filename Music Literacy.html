@@ -33,6 +33,8 @@
             overflow-y: auto;
             padding-top: 20px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Sidebar Header Styling */
@@ -103,6 +105,37 @@
         nav ul li a:hover {
             background: var(--secondary-color);
             border-left: 4px solid var(--accent-color);
+        }
+
+        /* Sidebar Social/External Links Footer */
+        .sidebar-social {
+            padding: 20px;
+            border-top: 1px solid var(--secondary-color);
+            margin-top: auto;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .sidebar-social-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #bdc3c7;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .sidebar-social a {
+            display: flex;
+            align-items: center;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 6px 0;
+            transition: color 0.3s;
+        }
+
+        .sidebar-social a:hover {
+            color: var(--accent-color);
         }
 
         /* Main Content */
@@ -208,6 +241,13 @@
             <li><a href="#module-6">Module 6: Chord Progressions</a></li>
             <li><a href="#module-7">Module 7: Reading Music</a></li>
         </ul>
+
+        <!-- Bottom Left External Music Links -->
+        <div class="sidebar-social">
+            <div class="sidebar-social-title">Listen & Follow</div>
+            <a href="https://soundcloud.com/kentayjus" target="_blank" rel="noopener noreferrer">🎧 SoundCloud</a>
+            <a href="https://suno.com/@kentayjus" target="_blank" rel="noopener noreferrer">🎵 Suno AI Music</a>
+        </div>
     </nav>
 
     <!-- Main Content Area -->
